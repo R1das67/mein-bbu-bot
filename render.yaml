@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: discord-bot
+    env: python
+    plan: free
+    region: frankfurt
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_DISCORD_BOT_TOKEN
+      - key: WHITELIST_WEBHOOK
+        value: 843180408152784936,662596869221908480
+      - key: WHITELIST_INVITES
+        value: 843180408152784936,662596869221908480
