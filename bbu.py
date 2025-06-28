@@ -14,8 +14,8 @@ intents.members = True
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
 # Whitelist als kommaseparierte Strings in Umgebungsvariable
-WHITELIST_WEBHOOK = os.environ.get('843180408152784936','662596869221908480').split(',')
-WHITELIST_INVITES = os.environ.get('843180408152784936','662596869221908480').split(',')
+WHITELIST_WEBHOOK = os.environ.get('843180408152784936','662596869221908480','1388295197691216030').split(',')
+WHITELIST_INVITES = os.environ.get('843180408152784936','662596869221908480','1388295197691216030').split(',')
 if BOT_TOKEN is None:
     raise ValueError("BOT_TOKEN ist nicht gesetzt!Bitte Umgehungsvariable prüfen.")
 bot = commands.Bot(command_prefix='!', intents=intents)
