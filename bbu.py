@@ -15,7 +15,8 @@ intents.members = True
 intents.guild_messages = True
 
 # === BOT-TOKEN ===
-BOT_TOKEN = 'DEIN_BOT_TOKEN_HIER'  # ⚠ Ersetze durch deinen echten Token
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # ⚠ Ersetze durch deinen echten Token
 
 if not BOT_TOKEN:
     raise ValueError("❌ BOT_TOKEN fehlt! Bitte direkt im Code eintragen.")
